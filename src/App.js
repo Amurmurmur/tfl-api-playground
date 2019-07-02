@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
+/**
+ * Map components
+ */
+import { Map, TileLayer, Marker, Popup, Tooltip } from "react-leaflet";
+import MarkerClusterGroup from "react-leaflet-markercluster";
+
+/**
+ * Material UI
+ */
 import Snackbar from "@material-ui/core/Snackbar";
 import Grid from "@material-ui/core/Grid";
 import Fade from "@material-ui/core/Fade";
@@ -13,14 +22,15 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import LinearProgress from "@material-ui/core/LinearProgress";
 
-import { Map, TileLayer, Marker, Popup, Tooltip } from "react-leaflet";
-import MarkerClusterGroup from "react-leaflet-markercluster";
+/**
+ * Custom components
+ */
+import StationList from "./components/StationsList";
 
 /**
  * Api
  */
 import API from "./utils/api";
-import StationList from "./components/StationsList";
 
 /**
  * Fixture apis can be used as well here for tests
