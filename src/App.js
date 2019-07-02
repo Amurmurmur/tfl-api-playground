@@ -65,13 +65,11 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(8)
   },
   footer: {
-    footer: {
       display: "flex",
       flexGrow: 1,
       alignItems: "center",
       marginTop: theme.spacing(2),
       justifyContent: "center"
-    }
   }
 }));
 
