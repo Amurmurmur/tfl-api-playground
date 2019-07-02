@@ -29,7 +29,6 @@ const useStyles = makeStyles(theme => ({
 function Line({ line, onClick, expanded }) {
   const classes = useStyles();
   const latestStatus = _.last(line.lineStatuses);
-  console.log(latestStatus);
   return (
     <div key={line.id}>
       <ListItem
